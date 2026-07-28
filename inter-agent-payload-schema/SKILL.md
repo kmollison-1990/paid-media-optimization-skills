@@ -36,6 +36,5 @@ Defines the lightweight JSON contract for Master/Classifier → specialist sub-a
       "campaign_type": "string",
       "status": "ENABLED"
     }
-
   ]
 }
