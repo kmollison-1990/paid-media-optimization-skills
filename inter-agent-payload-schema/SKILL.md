@@ -1,1 +1,32 @@
+---
+name: inter-agent-payload-schema
+description: Defines the JSON contract for Master/Classifier agent handoffs to specialist sub-agents in the paid media optimization system — routing, identity, and scope only, never metrics. Use whenever the Classifier/Master agent dispatches campaigns to a specialist agent, or a specialist needs to validate an incoming payload.
+---
 
+# Inter-Agent Payload Schema
+
+## Purpose
+Defines the lightweight JSON contract for Master/Classifier → specialist sub-agent handoffs. Carries only routing, identity, and scope — never metrics. Each receiving specialist is responsible for independently pulling whatever metrics its own audit rules require (via `ads-performance-data-standards`), since it would otherwise duplicate a query the Classifier already ran.
+
+## Schema
+
+```json
+{
+  "orchestrator_run_id": "string-uuid",
+  "run_date": "YYYY-MM-DD",
+  "client_name": "string",
+  "google_ads_customer_id": "string",
+  "analysis_window": {
+    "days": 30,
+    "start_date": "YYYY-MM-DD",
+    "end_date": "YYYY-MM-DD"
+  },
+  "campaigns": [
+    {
+      "campaign_id": "string",
+      "campaign_name": "string",
+      "campaign_type": "string",
+      "status": "ENABLED"
+    }
+  ]
+}
