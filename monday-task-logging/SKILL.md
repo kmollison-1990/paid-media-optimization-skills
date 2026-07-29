@@ -8,11 +8,17 @@ description: Standardizes every Monday.com task created across the paid media op
 ## Purpose
 Standardizes every Monday.com task created across the system — location, fields, and update format.
 
-## 1. Target Location (constant)
+## 1. Target Location
 - **Workspace:** TEST | Paid Media Optimization Board
 - **Board Title:** TEST | Paid Media Optimization Board
 - **Monday Host:** vividfront-team.monday.com
-- **Target Group:** Google Ads
+- **Target Group:**
+  - Google Ads entities → `Google Ads` group
+  - Meta Ads entities → `Meta Ads` group (new — create if it doesn't exist)
+- A single Pacing parent task spanning both platforms still logs its subitems into
+  the correct group per entity's platform — Google Ads action subitems go in the
+  `Google Ads` group, Meta Ads action subitems go in the `Meta Ads` group, even though
+  they share one parent task and one run.
 
 ## 2. Task Grouping Mode (pick one per workflow)
 - Pacing → Consolidated Parent + Per-Action Subitems: exactly ONE parent task per client run, titled Pacing - New Campaign Daily Budgets, Campaign Column = "Multiple Campaigns." The parent task's own update is a rolled-up summary only — it does NOT restate individual budget figures as Concrete Action Items (see Section 5a). Every individual budget change action for the run — a single immediate change OR one step of a pacing-math Section 6 staged schedule — is logged as its own Monday subitem under that parent, per Section 4. This lets each action be independently approved and checked off on its own target date without blocking on unrelated actions in the same run.
