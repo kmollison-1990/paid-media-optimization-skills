@@ -15,7 +15,7 @@ Standardizes every Monday.com task created across the system — location, field
 - **Target Group:** Google Ads
 
 ## 2. Task Grouping Mode (pick one per workflow)
-Pacing → Consolidated Parent + Per-Action Subitems: exactly ONE parent task per client run, titled Pacing - New Campaign Daily Budgets, Campaign Column = "Multiple Campaigns." The parent task's own update is a rolled-up summary only — it does NOT restate individual budget figures as Concrete Action Items (see Section 5a). Every individual budget change action for the run — a single immediate change OR one step of a pacing-math Section 6 staged schedule — is logged as its own Monday subitem under that parent, per Section 4. This lets each action be independently approved and checked off on its own target date without blocking on unrelated actions in the same run.
+- Pacing → Consolidated Parent + Per-Action Subitems: exactly ONE parent task per client run, titled Pacing - New Campaign Daily Budgets, Campaign Column = "Multiple Campaigns." The parent task's own update is a rolled-up summary only — it does NOT restate individual budget figures as Concrete Action Items (see Section 5a). Every individual budget change action for the run — a single immediate change OR one step of a pacing-math Section 6 staged schedule — is logged as its own Monday subitem under that parent, per Section 4. This lets each action be independently approved and checked off on its own target date without blocking on unrelated actions in the same run.
 - **Performance → Individual mode:** ONE standalone task PER recommendation, titled `Performance - [Specific Recommendation Title]`. Never group.
 
 ## 3. Required Task Columns
