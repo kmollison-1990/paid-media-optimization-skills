@@ -26,7 +26,12 @@ A brand campaign (name contains "Brand") must have its coverage gap closed immed
 - Search Budget Lost Impression Share > 5.0%
 
 ## 4. Headroom Check
-A non-brand campaign is only eligible for a budget increase if Search Budget Lost Impression Share > 10.0%.
+- **Google Ads:** A non-brand budget entity is only eligible for a budget increase if
+  Search Budget Lost Impression Share > 10.0%.
+- **Meta Ads:** A budget entity is only eligible for a budget increase if its trailing
+  14-day Frequency is ≤ 15.0. Frequency > 15.0 indicates audience saturation — the
+  entity is not eligible for an increase regardless of ROAS/CPA ranking, even if it
+  would otherwise qualify under the Performance Ranking Hierarchy in Section 5.
 
 ## 5. Allocation Strategy by Status
 - **UNDER_PACING:** close Brand Protection gaps → scale up highest-ranked non-brand campaigns passing Headroom Check → leave underperformers untouched.
