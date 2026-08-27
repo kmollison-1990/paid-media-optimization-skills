@@ -44,7 +44,7 @@ passes; only one match is required to flag it.
   informational (e.g. "how to," "free," "jobs," "reviews"), or otherwise
   unrelated to the client's actual product/service category?
 - **Pass C — Performance Waste Check:** Has the term accumulated spend ≥ 1.5x
-  the campaign's (or account's, if no campaign-level target exists) target CPA
+  the campaign's average CPA
   over the analysis window, with zero conversions?
 - **Pass D — Close Variant / Broad Match Drift Check:** Was the term matched via
   a broad-match or close-variant expansion of an existing keyword, and does it
