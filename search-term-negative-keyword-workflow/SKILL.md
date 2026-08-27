@@ -24,13 +24,14 @@ This skill defines the HOW. Each calling agent supplies its own trigger criteria
   tool's pagination mechanism (offset or page token) until a call returns fewer
   than 5000 rows, confirming the full result set for the analysis window has
   been retrieved.
-- Required fields: search_term, campaign_id, ad_group_id, impressions, clicks,
+- Required fields: search_term, campaign_id, ad_group_id, status, impressions, clicks,
   cost, conversions, conversion_value.
 - Apply the conversion-value fallback rule from `ads-performance-data-standards`
   before using conversion_value in any calculation.
 - Exclude search terms with fewer than 10 impressions in the window (statistical
   noise threshold) unless the calling agent explicitly specifies a different
   threshold.
+- Exclude search terms with status of excluded
 
 ## 2. Term Classification Passes
 Run every retrieved search term through these passes. A term can match multiple
