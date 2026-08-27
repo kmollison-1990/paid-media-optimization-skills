@@ -55,7 +55,7 @@ passes; only one match is required to flag it.
   that FAIL Pass A AND match Pass B or D (non-brand/generic/off-target terms
   leaking into a brand campaign).
 - **NonBrand Search Optimizer — "Negative Keyword Harvesting Audit":** flag terms
-  matching Pass C.
+  matching Pass B or C.
 - **NonBrand Search Optimizer — "Brand Leakage Audit":** flag terms that PASS
   Pass A (brand terms appearing in a nonbrand campaign).
 - **Shopping Ads Optimizer — "Search Terms Audit":** flag terms matching Pass B
