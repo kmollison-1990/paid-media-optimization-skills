@@ -22,7 +22,32 @@ Standardizes every Monday.com task created across the system — location, field
 
 ## 2. Task Grouping Mode (pick one per workflow)
 - Pacing → Consolidated Parent + Per-Action Subitems: exactly ONE parent task per client run, titled Pacing - New Campaign Daily Budgets, Campaign Column = "Multiple Campaigns." The parent task's own update is a rolled-up summary only — it does NOT restate individual budget figures as Concrete Action Items (see Section 5a). Every individual budget change action for the run — a single immediate change OR one step of a pacing-math Section 6 staged schedule — is logged as its own Monday subitem under that parent, per Section 4. This lets each action be independently approved and checked off on its own target date without blocking on unrelated actions in the same run.
-- **Performance → Individual mode:** ONE standalone task PER recommendation, titled `Performance - [Specific Recommendation Title]`. Never group.
+- **Performance → Individual mode:** ONE standalone task PER recommendation, titled `Performance - [Specific Recommendation Title]`. Never group. **Exception:** see Section 2a for how "one recommendation" is defined specifically for negative-keyword / search-term exclusion findings.
+
+### 2a. Recommendation Granularity for Negative-Keyword / Search-Term Exclusions
+For negative-keyword and search-term exclusion findings specifically, "one recommendation"
+means **one audit pass's bundle of flagged terms for a given campaign** — not each
+individual keyword. Terms flagged by the same pass, for the same campaign, for the
+same underlying reason are one optimization action and belong in one task.
+
+- **Unit of grouping:** one task per (campaign, audit pass) combination that has
+  flagged terms — e.g. Pass A (Brand Leakage), Pass B (Intent/Relevance), Pass C
+  (Performance Waste), Pass D (if defined by the specialist's own audit skill). List
+  every flagged term for that pass/campaign inside the single task's Concrete Action
+  Items section.
+- **Never combine passes:** Pass A and Pass B findings for the same campaign are two
+  separate tasks, even though both are "negative keyword" recommendations — they are
+  triggered by different rules and warrant independent review/approval.
+- **Never combine campaigns:** a pass's findings for Campaign X and Campaign Y are
+  always separate tasks, consistent with existing Brand/NonBrand campaign separation.
+- **Batching for length only:** if a single pass/campaign bundle is too large for one
+  readable update, split it into `(Batch 1 of N)` / `(Batch 2 of N)` tasks as already
+  practiced — this is a formatting split, not a recommendation split, and every batch
+  must state the total term count and combined spend for the full bundle so a reader
+  of any one batch has full context.
+- This exception applies only to negative-keyword/search-term exclusion findings. All
+  other Performance recommendation types (bid strategy, ad copy/RSA assets, product ID
+  exclusions, feed health, etc.) remain one task per distinct recommendation as before.
 
 ## 3. Required Task Columns
 - Task Title (per mode above)
@@ -89,4 +114,3 @@ update — without opening the parent task or any other subitem:
   effective/target date for this step.
 - Section 3 — Strategic Justification: 2-3 sentences specific to this one action, not
   the whole run.
-
