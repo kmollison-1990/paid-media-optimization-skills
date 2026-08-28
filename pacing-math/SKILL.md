@@ -22,7 +22,7 @@ Standardizes budget pacing calculations and allocation logic.
 
 ## 3. Brand Protection Rule (overrides pacing status)
 A brand campaign (name contains "Brand") must have its coverage gap closed immediately, regardless of pacing status, if:
-- Absolute Top Impression Share < 85.0%, OR
+- Search Impression Share < 85.0%, OR
 - Search Budget Lost Impression Share > 5.0%
 
 ## 4. Headroom Check
