@@ -11,7 +11,7 @@ Low outbound click-through despite adequate impression volume is typically a cal
 ## 1. Data Retrieval
 Pull, per active ad in scope, over the run's analysis window:
 - Impressions
-- Outbound Clicks (link clicks to the destination URL — Meta's `outbound_clicks` metric, not the broader `clicks` metric which also counts on-platform engagement like likes/comments/expands)
+- Outbound Clicks (link clicks to the destination URL — Meta's `link_click` metric, not the broader `clicks` metric which also counts on-platform engagement like likes/comments/expands)
 - ad_id, ad_name, ad_set_id, campaign_id, creative format
 
 ## 2. Calculated Metric
