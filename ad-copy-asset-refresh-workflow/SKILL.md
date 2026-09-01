@@ -43,7 +43,7 @@ replacement text — see Section 4.
   alone, and never let a GOOD/EXCELLENT Ad Strength rating suppress a flag
   raised by Pass A, C, D, or E.
 - **Pass C — CTR Benchmark Check (primary trigger):** Ad group CTR over the
-  analysis window falls below the account's trailing-window average CTR for
+  analysis window falls below the campaign's trailing-window average CTR for
   the same campaign type.
 - **Pass D — Extension Coverage Check (run independently, always):** Sitelinks,
   callouts, or structured snippets are missing, disabled, or below the
